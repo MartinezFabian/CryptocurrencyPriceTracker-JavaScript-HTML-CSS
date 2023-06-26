@@ -13,5 +13,47 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="app app__container">
+      <section class="app__form-section">
+        <form class="form">
+          <div class="form__field">
+            <label for="currency" class="form__label">Elige tu moneda</label>
+            <select id="currency" class="form__select">
+              <option value="">- Seleccionar -</option>
+              <option value="AUD">Dólar Australiano</option>
+              <option value="BRL">Real Brasileño</option>
+              <option value="CLP">Peso Chileno</option>
+              <option value="EUR">Euros</option>
+              <option value="GBP">Libras</option>
+              <option value="MXN">Peso Mexicano</option>
+              <option value="ARS">Peso Argentino</option>
+              <option value="USD">Dólar Estadounidense</option>
+              <option value="UYU">Peso Uruguayo</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="cryptocurrency" class="form__label">Elige tu criptomoneda</label>
+            <select id="cryptocurrency" class="form__select">
+              <option value="">- Seleccionar -</option>
+            </select>
+          </div>
+
+          <div class="form__button">
+            <button type="submit" class="button">Cotizar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="app__data-section">
+        <div class="app__data-flex">
+          <article class="card">
+            <p class="card__title">El precio es</p>
+            <h3 class="card__data">$100</h3>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
