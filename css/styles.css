@@ -26,10 +26,112 @@ body {
   font-family: var(--main-font);
   font-size: 1.6rem;
   line-height: 1.4;
+  background-color: var(--background-color);
+  color: var(--white);
 }
 
 [class$="__container"] {
   max-width: 120rem;
   width: 90%; /* cuando el ancho sea menos de 1200px va a ocupar el 90% */
   margin: 0 auto; /* centra el contenedor */
+}
+
+/* app */
+.app {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+@media (min-width: 768px) {
+  .app {
+    margin-top: 20rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* form section */
+@media (min-width: 768px) {
+  .app__form-section {
+    width: 100%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.form__select {
+  width: 100%;
+  background-color: var(--main--color);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.form__select:focus {
+  border-color: var(--blue);
+}
+
+.button {
+  width: 60%;
+  height: 4.5rem;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 1.5rem;
+  font-weight: 600;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/* data section */
+
+@media (min-width: 768px) {
+  .app__data-section {
+    width: 100%;
+  }
+}
+
+.app__data-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.card {
+  background-color: var(--main--color);
+  padding: 2rem 5rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__title {
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.card__data {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
