@@ -1,4 +1,4 @@
-import { fetchCryptocurrencies, getSelection, submitForm } from "../utils/functions.js";
+import { fetchCryptocurrencies, getSelection, validateSelections } from "../utils/functions.js";
 import { form, selectCurrency, selectCryptocurrency } from "../utils/selectors.js";
 
 class App {
@@ -15,7 +15,7 @@ class App {
     selectCryptocurrency.addEventListener("change", getSelection);
 
     // al dar clic en 'Cotizar' validar las selecciones
-    form.addEventListener("submit", submitForm);
+    form.addEventListener("submit", validateSelections);
   }
 }
 

@@ -1,5 +1,4 @@
 import UserInterface from "../classes/UserInterface.js";
-import { selectCurrency, selectCryptocurrency } from "./selectors.js";
 
 async function fetchCryptocurrencies() {
   const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD";
@@ -36,15 +35,15 @@ function getSelection(e) {
   selectionsObject[e.target.name] = e.target.value;
 }
 
-function submitForm(e) {
+function validateSelections(e) {
   e.preventDefault();
 
   if (selectionsObject.currency === "" || selectionsObject.cryptocurrency === "") {
-    console.log("Ambos campos son obligatorios");
+    UserInterface.showErrorAlert("Ambos campos son obligatorios");
     return;
   }
 
   console.log(selectionsObject);
 }
 
-export { fetchCryptocurrencies, getSelection, submitForm };
+export { fetchCryptocurrencies, getSelection, validateSelections };
