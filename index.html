@@ -16,7 +16,7 @@
   <body>
     <div class="app app__container">
       <section class="app__form-section">
-        <form class="form">
+        <form id="form" class="form">
           <div class="form__field">
             <label for="currency" class="form__label">Elige tu moneda</label>
             <select id="currency" class="form__select">
@@ -41,13 +41,13 @@
           </div>
 
           <div class="form__button">
-            <button type="submit" class="button">Cotizar</button>
+            <button id="button-submit" type="submit" class="button">Cotizar</button>
           </div>
         </form>
       </section>
 
       <section class="app__data-section">
-        <div class="app__data-flex">
+        <div id="data-container" class="app__data-flex">
           <article class="card">
             <p class="card__title">El precio es</p>
             <h3 class="card__data">$100</h3>

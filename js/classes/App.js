@@ -1,10 +1,13 @@
+import { fetchCryptocurrencies } from "../utils/functions.js";
+
 class App {
   constructor() {
     this.initApp();
   }
 
   initApp() {
-    console.log("Todo OK");
+    // obtener las 10 criptomonedas mas populares
+    fetchCryptocurrencies();
   }
 }
 
