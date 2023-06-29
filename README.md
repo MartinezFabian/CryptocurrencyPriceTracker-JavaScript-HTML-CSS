@@ -26,4 +26,4 @@ The purpose of this project is to apply the theory learned about Fetch API with 
 
 ## Online Demo
 
-Check out the [online demo](...) to see the Cryptocurrency Price Tracker in action.
+Check out the [online demo](https://martinezfabian.github.io/CryptocurrencyPriceTracker-JavaScript-HTML-CSS/) to see the Cryptocurrency Price Tracker in action.
