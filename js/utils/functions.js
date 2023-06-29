@@ -61,7 +61,7 @@ async function fetchAllTheCurrentTradingInfo() {
       // convertir la respuesta en un objeto JavaScript
       const data = await response.json();
 
-      console.log(data.DISPLAY[cryptocurrency][currency]);
+      UserInterface.showAllTheCurrentTradingInfo(data.DISPLAY[cryptocurrency][currency]);
     } else {
       // si la respuesta no es exitosa lanzar un error
       throw new Error(`Error: ${response.statusText}`);
