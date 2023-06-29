@@ -52,6 +52,8 @@ async function fetchAllTheCurrentTradingInfo() {
 
   const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptocurrency}&tsyms=${currency}`;
 
+  UserInterface.showLoader();
+
   try {
     // realizar la solicitud GET a la API
     const response = await fetch(url);

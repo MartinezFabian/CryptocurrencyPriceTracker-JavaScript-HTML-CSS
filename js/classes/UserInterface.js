@@ -137,6 +137,20 @@ class UserInterface {
       dataContainer.removeChild(dataContainer.firstChild);
     }
   }
+
+  static showLoader() {
+    UserInterface.clearHTML();
+
+    const loaderContainer = document.createElement("div");
+    loaderContainer.classList.add("loader-container");
+
+    dataContainer.appendChild(loaderContainer);
+
+    const loader = document.createElement("span");
+    loader.classList.add("loader");
+
+    loaderContainer.appendChild(loader);
+  }
 }
 
 export default UserInterface;
